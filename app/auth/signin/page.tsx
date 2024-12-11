@@ -19,14 +19,21 @@ export default function SignIn() {
               onClick={() => signIn('kakao', { callbackUrl: '/' })}
               className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-black bg-yellow-300 hover:bg-yellow-400"
             >
-              카카오톡으로 로그인
+              <Image
+              src="/images/kakao.svg"
+              alt="Kakao"
+              width={20}
+              height={20}
+              className="w-5 h-5"
+            />
+            <span>Continue with Kakao</span>
             </button>
-            <button
+            {/* <button
               onClick={() => signIn('google', { callbackUrl: '/' })}
               className="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-500 hover:bg-red-600"
             >
               구글로 로그인
-            </button>
+            </button> */}
           </div>
         </div>
       </div>
